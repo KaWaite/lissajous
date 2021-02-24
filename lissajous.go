@@ -18,11 +18,12 @@ const (
 	blackIndex = 1 // next color in palette
 )
 
-func writeTo() {
-	lissajous(os.Stdout)
+func main() {
+	Lissajous(os.Stdout)
 }
 
-func lissajous(out io.Writer) {
+// Lissajous is the function that creates the cool gif
+func Lissajous(out io.Writer) {
 	const (
 		cycles  = 10    // number of complete x oscillator revolutions
 		res     = 0.005 // angular resolution
