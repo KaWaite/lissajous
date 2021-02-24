@@ -1,6 +1,5 @@
-// Dup prints the text of each line that appears more than
-// once in the standard input, preceded by its count.
-package main
+// Package lissajous - makes a wacky gif
+package lissajous
 
 import (
 	"image"
@@ -19,7 +18,7 @@ const (
 	blackIndex = 1 // next color in palette
 )
 
-func main() {
+func writeTo() {
 	lissajous(os.Stdout)
 }
 
