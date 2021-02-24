@@ -8,7 +8,6 @@ import (
 	"io"
 	"math"
 	"math/rand"
-	"os"
 )
 
 var palette = []color.Color{color.Black, color.RGBA{50, 100, 0, 1}, color.RGBA{150, 10, 0, 1}, color.RGBA{10, 0, 100, 1}}
@@ -18,9 +17,9 @@ const (
 	blackIndex = 1 // next color in palette
 )
 
-func main() {
-	Lissajous(os.Stdout)
-}
+// func main() {
+// 	Lissajous(os.Stdout)
+// }
 
 // Lissajous is the function that creates the cool gif
 func Lissajous(out io.Writer) {
